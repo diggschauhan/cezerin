@@ -16,7 +16,7 @@ module.exports = {
   storeListenPort: 3000,
 
   // used by API
-  mongodbServerUrl: 'mongodb://127.0.0.1:27017/shop',
+  mongodbServerUrl: 'mongodb://127.0.0.1:27017/db',
 
   smtpServer: {
     host: '',
@@ -29,10 +29,10 @@ module.exports = {
   },
 
   // key to sign tokens
-  jwtSecretKey: '-',
+  jwtSecretKey: '-flkasldfkpaewr0wcckldsfk',
 
   // key to sign store cookies
-  cookieSecretKey: '-',
+  cookieSecretKey: '-89e40vmiodsmfvosigmvdfog',
 
   // path to uploads
   categoriesUploadPath: 'public/content/images/categories',
@@ -52,5 +52,5 @@ module.exports = {
   // used by API
   orderStartNumber: 1000,
 
-  developerMode: true
+  developerMode: false
 }
