@@ -34,7 +34,7 @@ npm start
 2. setting up default settings
 ```js
 db.settings.insert({
-  domain: 'http://env-0287497.mj.milesweb.cloud:3000',
+  domain: 'http://env-0287497.mj.milesweb.cloud',
   currency_code: 'USD',
   currency_symbol: '$',
   currency_format: '${amount}',
@@ -55,8 +55,8 @@ db.pages.insertMany([
 ]);
 ```
 
-Open http://env-0287497.mj.milesweb.cloud:3000 to see your store.
+Open http://env-0287497.mj.milesweb.cloud to see your store.
 
-Dashboard - http://env-0287497.mj.milesweb.cloud:3000/admin
+Dashboard - http://env-0287497.mj.milesweb.cloud/admin
 
-API - http://env-0287497.mj.milesweb.cloud:3001
+API - http://env-0287497.mj.milesweb.cloud
