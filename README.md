@@ -43,7 +43,7 @@ npm run build
 npm start
 ```
 
-Then open <http://env-0287497.mj.milesweb.cloud> to see your app.
+Then open <http://env-0287497.mj.milesweb.cloud:3000> to see your app.
 
 
 
