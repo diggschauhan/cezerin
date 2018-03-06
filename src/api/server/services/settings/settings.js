@@ -13,7 +13,7 @@ const parse = require('../../lib/parse');
 class SettingsService {
   constructor() {
     this.defaultSettings = {
-      'domain': 'http://localhost',
+      'domain': 'http://env-0287497.mj.milesweb.cloud',
       'logo_file': null,
       'language': 'en',
       'currency_code': 'USD',

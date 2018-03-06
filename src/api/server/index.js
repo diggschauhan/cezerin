@@ -34,7 +34,7 @@ app.use(logger.sendResponse);
 
 const server = app.listen(settings.apiListenPort, () => {
   const serverAddress = server.address();
-  winston.info(`API running at http://localhost:${serverAddress.port}`);
+  winston.info(`API running at http://env-0287497.mj.milesweb.cloud:${serverAddress.port}`);
 });
 
 dashboardWebSocket.listen(server);

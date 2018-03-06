@@ -20,7 +20,8 @@
     {
       "name": "Restmount <jsonmount@gmail.com>",
       "url": "https://github.com/restmount"
-    }, {
+    },
+    {
       "name": "Sergey Onufrienko <sergey@onufrienko.com>",
       "url": "https://github.com/sonufrienko"
     }
@@ -31,22 +32,22 @@
     "url": "https://github.com/cezerin/cezerin"
   },
   "scripts": {
-    "compile:dev": "babel src/admin -d dist/admin --watch & babel src/store -d dist/store --watch & babel theme/src -d theme/dist --watch",
+    "compile:dev": "babel src/admin -d dist/admin && babel src/store -d dist/store && babel theme/src -d theme/dist",
     "compile": "babel src/admin -d dist/admin --quiet && babel src/store -d dist/store --quiet",
-    "webpack:admin:dev": "webpack -d --config webpack.config.admin.js --watch --progress --colors",
-    "webpack:store:dev": "webpack -d --config webpack.config.store.js --watch --progress --colors",
-    "webpack:admin:prod": "NODE_ENV=production webpack -p --config webpack.config.admin.js",
-    "webpack:store:prod": "NODE_ENV=production webpack -p --config webpack.config.store.js",
+    "webpack:admin:dev": "webpack -d --config webpack.config.admin.js --progress --colors",
+    "webpack:store:dev": "webpack -d --config webpack.config.store.js --progress --colors",
+    "webpack:admin:prod": "SET NODE_ENV=production && webpack -d --config webpack.config.admin.js",
+    "webpack:store:prod": "SET NODE_ENV=production && webpack -d --config webpack.config.store.js",
     "theme:install": "./scripts/theme-install.sh",
     "theme:export": "./scripts/theme-export.sh",
     "theme:copy": "cd ./theme && npm run build --quiet && npm i && cd ../",
     "theme:build:dev": "npm run theme:copy && npm run webpack:store:dev",
     "theme:build:prod": "npm run theme:copy --silent && npm run webpack:store:prod",
-    "build:dev": "npm run compile:dev & npm run webpack:store:dev & npm run webpack:admin:dev",
-    "build": "NODE_ENV=production npm run compile && npm run theme:build:prod && npm run webpack:admin:prod",
+    "build:dev": "npm run compile:dev && npm run webpack:store:dev & npm run webpack:admin:dev",
+    "build": "SET NODE_ENV=production && npm run compile && npm run theme:build:prod && npm run webpack:admin:prod",
     "start-api": "node src/api/server/index.js",
     "start-store": "node dist/store/server/index.js",
-    "start": "NODE_ENV=production npm run start-api & npm run start-store"
+    "start": "SET NODE_ENV=production && npm run start-api && npm run start-store"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

@@ -47,5 +47,5 @@ app.get('*', pageRendering);
 
 var server = app.listen(settings.storeListenPort, function () {
   var serverAddress = server.address();
-  winston.info('Store running at http://localhost:' + serverAddress.port);
+  winston.info('Store running at http://env-0287497.mj.milesweb.cloud:' + serverAddress.port);
 });

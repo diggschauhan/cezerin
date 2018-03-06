@@ -222,7 +222,7 @@ class SecurityTokensService {
     }
 
     if(ip === '::1'){
-      ip = 'localhost';
+      ip = 'env-0287497.mj.milesweb.cloud';
     }
 
     return ip;

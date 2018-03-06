@@ -1,13 +1,13 @@
 // config used by server side only
 module.exports = {
   // used by Store (server side)
-  apiBaseUrl: `http://localhost:3001/api/v1`,
+  apiBaseUrl: `http://env-0287497.mj.milesweb.cloud:3001/api/v1`,
 
   // used by Store (server and client side)
-  ajaxBaseUrl: `http://localhost:3001/ajax`,
+  ajaxBaseUrl: `http://env-0287497.mj.milesweb.cloud:3001/ajax`,
 
   // Access-Control-Allow-Origin
-  storeBaseUrl: `http://localhost:3000`,
+  storeBaseUrl: `http://env-0287497.mj.milesweb.cloud:3000`,
 
   // used by API
   adminLoginUrl: '/admin/login',
