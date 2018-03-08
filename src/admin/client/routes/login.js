@@ -3,6 +3,7 @@ import messages from '../lib/text'
 import CezerinClient from 'cezerin-client';
 import settings from '../lib/settings';
 import * as auth from '../lib/auth'
+import api from '../lib/api'
 
 import RaisedButton from 'material-ui/RaisedButton'
 import Paper from 'material-ui/Paper'
@@ -40,7 +41,7 @@ export default class LoginForm extends React.Component {
       error: null
     });
 
-    CezerinClient.authorize(settings.apiBaseUrl, this.state.email)
+    api.authorize(settings.apiBaseUrl, this.state.email)
     .then(authorizeResponse => {
       this.setState({
         isFetching: false,
