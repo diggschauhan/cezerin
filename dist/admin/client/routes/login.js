@@ -26,10 +26,6 @@ var _auth = require('../lib/auth');
 
 var auth = _interopRequireWildcard(_auth);
 
-var _api = require('../lib/api');
-
-var _api2 = _interopRequireDefault(_api);
-
 var _RaisedButton = require('material-ui/RaisedButton');
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
@@ -80,7 +76,7 @@ var LoginForm = function (_React$Component) {
         error: null
       });
 
-      _api2.default.authorize(_settings2.default.apiBaseUrl, _this.state.email).then(function (authorizeResponse) {
+      _cezerinClient2.default.authorize(_settings2.default.apiBaseUrl, _this.state.email).then(function (authorizeResponse) {
         _this.setState({
           isFetching: false,
           isAuthorized: false,
