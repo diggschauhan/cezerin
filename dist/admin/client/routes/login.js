@@ -80,7 +80,7 @@ var LoginForm = function (_React$Component) {
         error: null
       });
 
-      _api2.default.authorize(_settings2.default.apiBaseUrl, _this.state.email).then(function (authorizeResponse) {
+      _cezerinClient2.default.authorize(_settings2.default.apiBaseUrl, _this.state.email).then(function (authorizeResponse) {
         _this.setState({
           isFetching: false,
           isAuthorized: false,

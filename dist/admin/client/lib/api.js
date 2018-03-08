@@ -1,9 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _cezerinClient = require('cezerin-client');
 
 var _cezerinClient2 = _interopRequireDefault(_cezerinClient);
@@ -21,11 +17,11 @@ var webstoreToken = localStorage.getItem('webstore_token');
 var DEVELOPER_MODE = _settings2.default.developerMode === true;
 
 if (dashboardToken || DEVELOPER_MODE === true) {
-  api = new _cezerinClient2.default({
+  var _api = new _cezerinClient2.default({
     apiBaseUrl: _settings2.default.apiBaseUrl || '/api/v1',
     apiToken: dashboardToken,
     webstoreToken: webstoreToken
   });
 }
 
-exports.default = api;
+module.exports = api;

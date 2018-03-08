@@ -41,7 +41,7 @@ export default class LoginForm extends React.Component {
       error: null
     });
 
-    api.authorize(settings.apiBaseUrl, this.state.email)
+    CezerinClient.authorize(settings.apiBaseUrl, this.state.email)
     .then(authorizeResponse => {
       this.setState({
         isFetching: false,
