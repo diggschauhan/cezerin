@@ -22,15 +22,15 @@ var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
 var _actions = require('modules/settings/actions');
 
-var _settings = require('lib/settings');
+var _settings = require('./lib/settings');
 
 var _settings2 = _interopRequireDefault(_settings);
 
-var _auth = require('lib/auth');
+var _auth = require('./lib/auth');
 
 var auth = _interopRequireWildcard(_auth);
 
-var _apiWebSocket = require('lib/apiWebSocket');
+var _apiWebSocket = require('./lib/apiWebSocket');
 
 var _rootReducer = require('./rootReducer');
 

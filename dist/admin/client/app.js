@@ -10,79 +10,79 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = require('react-router-dom');
 
-var _head = require('modules/head');
+var _head = require('./modules/head');
 
 var _head2 = _interopRequireDefault(_head);
 
-var _login = require('routes/login');
+var _login = require('./routes/login');
 
 var _login2 = _interopRequireDefault(_login);
 
-var _logout = require('routes/logout');
+var _logout = require('./routes/logout');
 
 var _logout2 = _interopRequireDefault(_logout);
 
-var _home = require('routes/home');
+var _home = require('./routes/home');
 
 var _home2 = _interopRequireDefault(_home);
 
-var _notFound = require('routes/notFound');
+var _notFound = require('./routes/notFound');
 
 var _notFound2 = _interopRequireDefault(_notFound);
 
-var _products = require('routes/products');
+var _products = require('./routes/products');
 
 var _products2 = _interopRequireDefault(_products);
 
-var _edit = require('routes/products/edit');
+var _edit = require('./routes/products/edit');
 
 var _edit2 = _interopRequireDefault(_edit);
 
-var _categories = require('routes/products/categories');
+var _categories = require('./routes/products/categories');
 
 var _categories2 = _interopRequireDefault(_categories);
 
-var _customers = require('routes/customers');
+var _customers = require('./routes/customers');
 
 var _customers2 = _interopRequireDefault(_customers);
 
-var _edit3 = require('routes/customers/edit');
+var _edit3 = require('./routes/customers/edit');
 
 var _edit4 = _interopRequireDefault(_edit3);
 
-var _groups = require('routes/customers/groups');
+var _groups = require('./routes/customers/groups');
 
 var _groups2 = _interopRequireDefault(_groups);
 
-var _orders = require('routes/orders');
+var _orders = require('./routes/orders');
 
 var _orders2 = _interopRequireDefault(_orders);
 
-var _edit5 = require('routes/orders/edit');
+var _edit5 = require('./routes/orders/edit');
 
 var _edit6 = _interopRequireDefault(_edit5);
 
-var _statuses = require('routes/orders/statuses');
+var _statuses = require('./routes/orders/statuses');
 
 var _statuses2 = _interopRequireDefault(_statuses);
 
-var _pages = require('routes/pages');
+var _pages = require('./routes/pages');
 
 var _pages2 = _interopRequireDefault(_pages);
 
-var _edit7 = require('routes/pages/edit');
+var _edit7 = require('./routes/pages/edit');
 
 var _edit8 = _interopRequireDefault(_edit7);
 
-var _settings = require('routes/settings');
+var _settings = require('./routes/settings');
 
 var _settings2 = _interopRequireDefault(_settings);
 
-var _apps = require('routes/apps');
+var _apps = require('./routes/apps');
 
 var _apps2 = _interopRequireDefault(_apps);
 
-var _files = require('routes/files');
+var _files = require('./routes/files');
 
 var _files2 = _interopRequireDefault(_files);
 

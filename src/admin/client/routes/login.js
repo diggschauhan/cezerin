@@ -1,8 +1,8 @@
 import React from 'react'
-import messages from 'lib/text'
+import messages from '../lib/text'
 import CezerinClient from 'cezerin-client';
-import settings from 'lib/settings';
-import * as auth from 'lib/auth'
+import settings from '../lib/settings';
+import * as auth from '../lib/auth'
 
 import RaisedButton from 'material-ui/RaisedButton'
 import Paper from 'material-ui/Paper'

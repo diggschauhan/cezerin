@@ -2,7 +2,5 @@
 module.exports = {
   // dashboard UI language
   language: 'en',
-  apiBaseUrl: 'http://env-0287497.mj.milesweb.cloud:3001/api/v1',
-  apiWebSocketUrl: 'ws://env-0287497.mj.milesweb.cloud:3001',
-  developerMode: false
+  ajaxBaseUrl: 'http://node6532-env-0287497.mj.milesweb.cloud:3001/ajax'
 }

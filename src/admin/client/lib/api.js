@@ -1,5 +1,5 @@
 import CezerinClient from 'cezerin-client'
-import settings from 'lib/settings'
+import settings from './settings'
 
 let api = null;
 let dashboardToken = localStorage.getItem('dashboard_token');

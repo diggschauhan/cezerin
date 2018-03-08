@@ -8,9 +8,9 @@ import {Provider} from 'react-redux'
 import thunkMiddleware from 'redux-thunk'
 
 import {fetchSettings} from 'modules/settings/actions'
-import settings from 'lib/settings'
-import * as auth from 'lib/auth'
-import {connectToWebSocket} from 'lib/apiWebSocket'
+import settings from './lib/settings'
+import * as auth from './lib/auth'
+import {connectToWebSocket} from './lib/apiWebSocket'
 import reducers from './rootReducer'
 import App from './app'
 

@@ -5,6 +5,7 @@ const ThemeService = require('../services/theme/theme');
 const ThemeSettingsService = require('../services/theme/settings');
 const ThemeAssetsService = require('../services/theme/assets');
 const ThemePlaceholdersService = require('../services/theme/placeholders');
+const winston = require('winston');
 
 class ThemeRoute {
   constructor(router) {
@@ -39,6 +40,7 @@ class ThemeRoute {
   }
 
   getSettings(req, res, next) {
+    winston.info(`called to settings in : ${req}`);
     ThemeSettingsService.getSettings().then(data => {
       res.send(data)
     }).catch(next)
@@ -67,6 +69,7 @@ class ThemeRoute {
   }
 
   getPlaceholders(req, res, next) {
+    winston.info(`called to place settings in : ${req}`);
     ThemePlaceholdersService.getPlaceholders().then(data => {
       res.send(data)
     }).catch(next);

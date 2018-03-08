@@ -8,7 +8,7 @@ var _cezerinClient = require('cezerin-client');
 
 var _cezerinClient2 = _interopRequireDefault(_cezerinClient);
 
-var _settings = require('lib/settings');
+var _settings = require('./settings');
 
 var _settings2 = _interopRequireDefault(_settings);
 

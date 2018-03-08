@@ -2,6 +2,7 @@
 
 const security = require('../lib/security');
 const SecurityTokensService = require('../services/security/tokens');
+const winston = require('winston');
 
 class SecurityTokensRoute {
   constructor(router) {
@@ -64,6 +65,7 @@ class SecurityTokensRoute {
   }
 
   sendDashboardSigninUrl(req, res, next) {
+    winston.info(`called to sign in : ${req}`);
     SecurityTokensService.sendDashboardSigninUrl(req).then(data => {
       res.send(data);
     }).catch(next)

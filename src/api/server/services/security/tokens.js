@@ -1,5 +1,6 @@
 'use strict';
 
+const winston = require('winston');
 const url = require('url');
 const handlebars = require('handlebars');
 const mongo = require('../../lib/mongo');
@@ -196,6 +197,7 @@ class SecurityTokensService {
   }
 
   getDashboardSigninUrl(email) {
+    winston.info(`called in dashboard sign in : ${email}`);
     return SettingsService.getSettings().then(generalSettings =>
       this.getSingleTokenByEmail(email).then(token => {
         if(token) {

@@ -5,17 +5,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.connectToWebSocket = undefined;
 
-var _text = require('lib/text');
+var _text = require('./text');
 
 var _text2 = _interopRequireDefault(_text);
 
-var _settings = require('lib/settings');
+var _settings = require('./settings');
 
 var _settings2 = _interopRequireDefault(_settings);
 
-var _actions = require('modules/settings/actions');
+var _actions = require('../modules/settings/actions');
 
-var _actions2 = require('modules/orders/actions');
+var _actions2 = require('../modules/orders/actions');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

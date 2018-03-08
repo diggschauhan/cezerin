@@ -10,7 +10,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = require('react-router-dom');
 
-var _text = require('lib/text');
+var _text = require('../lib/text');
 
 var _text2 = _interopRequireDefault(_text);
 
@@ -20,67 +20,67 @@ var _FontIcon = require('material-ui/FontIcon');
 
 var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
-var _general = require('modules/settings/general');
+var _general = require('../modules/settings/general');
 
 var _general2 = _interopRequireDefault(_general);
 
-var _generalLogo = require('modules/settings/generalLogo');
+var _generalLogo = require('../modules/settings/generalLogo');
 
 var _generalLogo2 = _interopRequireDefault(_generalLogo);
 
-var _theme = require('modules/settings/theme');
+var _theme = require('../modules/settings/theme');
 
 var _theme2 = _interopRequireDefault(_theme);
 
-var _shipping = require('modules/settings/shipping');
+var _shipping = require('../modules/settings/shipping');
 
 var _shipping2 = _interopRequireDefault(_shipping);
 
-var _shippingEdit = require('modules/settings/shippingEdit');
+var _shippingEdit = require('../modules/settings/shippingEdit');
 
 var _shippingEdit2 = _interopRequireDefault(_shippingEdit);
 
-var _payments = require('modules/settings/payments');
+var _payments = require('../modules/settings/payments');
 
 var _payments2 = _interopRequireDefault(_payments);
 
-var _paymentsEdit = require('modules/settings/paymentsEdit');
+var _paymentsEdit = require('../modules/settings/paymentsEdit');
 
 var _paymentsEdit2 = _interopRequireDefault(_paymentsEdit);
 
-var _list = require('modules/settings/tokens/list');
+var _list = require('../modules/settings/tokens/list');
 
 var _list2 = _interopRequireDefault(_list);
 
-var _edit = require('modules/settings/tokens/edit');
+var _edit = require('../modules/settings/tokens/edit');
 
 var _edit2 = _interopRequireDefault(_edit);
 
-var _email = require('modules/settings/email');
+var _email = require('../modules/settings/email');
 
 var _email2 = _interopRequireDefault(_email);
 
-var _smtp = require('modules/settings/smtp');
+var _smtp = require('../modules/settings/smtp');
 
 var _smtp2 = _interopRequireDefault(_smtp);
 
-var _emailTemplates = require('modules/settings/emailTemplates');
+var _emailTemplates = require('../modules/settings/emailTemplates');
 
 var _emailTemplates2 = _interopRequireDefault(_emailTemplates);
 
-var _checkout = require('modules/settings/checkout');
+var _checkout = require('../modules/settings/checkout');
 
 var _checkout2 = _interopRequireDefault(_checkout);
 
-var _checkoutFields = require('modules/settings/checkoutFields');
+var _checkoutFields = require('../modules/settings/checkoutFields');
 
 var _checkoutFields2 = _interopRequireDefault(_checkoutFields);
 
-var _list3 = require('modules/settings/webhooks/list');
+var _list3 = require('../modules/settings/webhooks/list');
 
 var _list4 = _interopRequireDefault(_list3);
 
-var _edit3 = require('modules/settings/webhooks/edit');
+var _edit3 = require('../modules/settings/webhooks/edit');
 
 var _edit4 = _interopRequireDefault(_edit3);
 

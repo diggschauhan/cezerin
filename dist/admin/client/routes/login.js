@@ -10,7 +10,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _text = require('lib/text');
+var _text = require('../lib/text');
 
 var _text2 = _interopRequireDefault(_text);
 
@@ -18,11 +18,11 @@ var _cezerinClient = require('cezerin-client');
 
 var _cezerinClient2 = _interopRequireDefault(_cezerinClient);
 
-var _settings = require('lib/settings');
+var _settings = require('../lib/settings');
 
 var _settings2 = _interopRequireDefault(_settings);
 
-var _auth = require('lib/auth');
+var _auth = require('../lib/auth');
 
 var auth = _interopRequireWildcard(_auth);
 

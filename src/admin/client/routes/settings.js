@@ -1,26 +1,26 @@
 import React from 'react'
 import { Switch, Route, NavLink } from 'react-router-dom'
-import messages from 'lib/text'
+import messages from '../lib/text'
 
 import {List, ListItem} from 'material-ui/List';
 import FontIcon from 'material-ui/FontIcon';
 
-import General from 'modules/settings/general'
-import GeneralLogo from 'modules/settings/generalLogo'
-import Theme from 'modules/settings/theme'
-import Shipping from 'modules/settings/shipping'
-import ShippingEdit from 'modules/settings/shippingEdit'
-import Payments from 'modules/settings/payments'
-import PaymentsEdit from 'modules/settings/paymentsEdit'
-import Tokens from 'modules/settings/tokens/list'
-import TokensEdit from 'modules/settings/tokens/edit'
-import Email from 'modules/settings/email'
-import Smtp from 'modules/settings/smtp'
-import EmailTemplate from 'modules/settings/emailTemplates'
-import Checkout from 'modules/settings/checkout'
-import CheckoutFields from 'modules/settings/checkoutFields'
-import Webhooks from 'modules/settings/webhooks/list'
-import WebhooksEdit from 'modules/settings/webhooks/edit'
+import General from '../modules/settings/general'
+import GeneralLogo from '../modules/settings/generalLogo'
+import Theme from '../modules/settings/theme'
+import Shipping from '../modules/settings/shipping'
+import ShippingEdit from '../modules/settings/shippingEdit'
+import Payments from '../modules/settings/payments'
+import PaymentsEdit from '../modules/settings/paymentsEdit'
+import Tokens from '../modules/settings/tokens/list'
+import TokensEdit from '../modules/settings/tokens/edit'
+import Email from '../modules/settings/email'
+import Smtp from '../modules/settings/smtp'
+import EmailTemplate from '../modules/settings/emailTemplates'
+import Checkout from '../modules/settings/checkout'
+import CheckoutFields from '../modules/settings/checkoutFields'
+import Webhooks from '../modules/settings/webhooks/list'
+import WebhooksEdit from '../modules/settings/webhooks/edit'
 
 const styles = {
   link: {

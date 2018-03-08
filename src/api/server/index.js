@@ -32,6 +32,8 @@ app.use('/ajax', ajaxRouter);
 app.use('/api', apiRouter);
 app.use(logger.sendResponse);
 
+winston.info(`cross origin at api level:${security.getAccessControlAllowOrigin()}`);
+
 const server = app.listen(settings.apiListenPort, () => {
   const serverAddress = server.address();
   winston.info(`API running at http://env-0287497.mj.milesweb.cloud:${serverAddress.port}`);

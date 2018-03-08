@@ -2,6 +2,7 @@
 
 const security = require('../lib/security');
 const SitemapService = require('../services/sitemap');
+const winston = require('winston');
 
 class SitemapRoute {
   constructor(router) {
@@ -14,6 +15,7 @@ class SitemapRoute {
   }
 
   getPaths(req, res, next) {
+    winston.info(`called to sitemap in : ${req}`);
     if (req.query.path) {
       SitemapService.getSinglePath(req.query.path, req.query.enabled).then((data) => {
         if (data) {
